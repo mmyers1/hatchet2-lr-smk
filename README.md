@@ -18,16 +18,16 @@ Snakemake pipeline for running HATCHet2 on long-read data
 
 * Normal BAM file
 * Tumor BAM file(s) (1 or more samples)
-* * If you have already performed haplotagging, you may supply haplotagged BAM files instead -- these must be placed or softlinked in `{config[data_dir]}/{patient}/{patient}_{sample}_haplotagged.bam`
-* Phased VCF file (e.g. via whatshap haplophase)
+  * If you have already performed haplotagging, you may supply haplotagged BAM files instead -- these must be placed or linked in `{config[data_dir]}/{patient}/{patient}_{sample}_haplotagged.bam`
+* Phased VCF file (e.g. via `whatshap haplophase`)
 * Reference genome
 * Centromere start and end positions for each chromosome (tables for `GRCh38` and `CHM13v2` are available in `centromere_locations`)
 * Cohort CSV table specifying for each patient:  (see `example_cohort.csv` for example)
-* * `patient_id`: string identifier
-* * `sample_names`: Colon-separated names for each sample 
-* * `normal_bam`: Path to long-read BAM file from normal sample
-* * `tumor_bams`: Colon-separated path(s) to long-read BAM file(s) (1 or more) from tumor sample(s)
-* * `phased_vcf`: Path to phased VCF file (e.g., in Isabl `ONT-WHATSHAP` results)
+  * `patient_id`: string identifier
+  * `sample_names`: Colon-separated names for each sample 
+  * `normal_bam`: Path to long-read BAM file from normal sample
+  * `tumor_bams`: Colon-separated path(s) to long-read BAM file(s) (1 or more) from tumor sample(s)
+  * `phased_vcf`: Path to phased VCF file (e.g., in Isabl `ONT-WHATSHAP` results)
 * YAML config file specifying file paths and input parameters (see `example_config.yaml` for example)
 
 
