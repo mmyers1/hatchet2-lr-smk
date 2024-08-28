@@ -1,0 +1,17 @@
+data_dir: "/Users/myersm2/data/"
+results_dir: "/Users/myersm2/results/"
+repo_dir: '/Users/myersm2/repos/hatchet2-lr-smk'
+ref_genome: '/Users/myersm2/reference/GRCh38.fa'
+cohort: '/Users/myersm2/repos/hatchet2-lr-smk/example_cohort.csv'
+
+centromere_starts: '/Users/myersm2/repos/hatchet2-lr-smk/centromere_locations/hg38_starts.csv'
+centromere_ends: '/Users/myersm2/repos/hatchet2-lr-smk/centromere_locations/hg38_ends.csv'
+
+min_reads_per_bin: 1000
+bin_interval: 10000
+threads_per_job :  8
+min_clones: 1
+max_clones: 3
+maxcn_diploid: 7
+maxcn_tetraploid: 12
+min_mapq: 30

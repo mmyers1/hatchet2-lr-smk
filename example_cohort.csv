@@ -1,0 +1,3 @@
+patient_id,sample_names,normal_bam,tumor_bams,phased_vcf
+patient1,sample1,/Users/myersm2/data/patient1_normal.bam,/Users/myersm2/data/patient1_sample1.bam,/Users/myersm2/data/patient1_phased.vcf
+patient2,sample1:sample2,/Users/myersm2/data/patient2_normal.bam,/Users/myersm2/data/patient2_sample1.bam:/Users/myersm2/data/patient1_sample2.bam,/Users/myersm2/data/patient2_phased.vcf
